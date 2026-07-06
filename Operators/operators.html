@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators in JavaScript</title>
+</head>
+<body>
+    <h1>Operators in JavaScript</h1>
+
+
+    <script>
+        // Arithmetic Operators
+        let a = 10;
+        let b = 5;
+
+        console.log("Addition:", a + b); // 15
+        console.log("Subtraction:", a - b); // 5
+        console.log("Multiplication:", a * b); // 50
+        console.log("Division:", a / b); // 2
+        console.log("Modulus:", a % b); // 0
+        console.log("Exponentiation:", a ** b); // 100000
+        console.log("Increment:", ++a); // 11
+        console.log("Decrement:", --b); // 4
+
+
+        // Assignment Operators
+        let c = 10;
+        c += 5; // c = c + 5
+        console.log("c after += 5:", c); // 15
+
+        c -= 3; // c = c - 3
+        console.log("c after -= 3:", c); // 12
+
+        c *= 2; // c = c * 2
+        console.log("c after *= 2:", c); // 24
+
+        c /= 4; // c = c / 4
+        console.log("c after /= 4:", c); // 6
+        
+        c **= 3; // c = c ** 3
+        console.log("c after **= 3:", c); // 216
+
+        c %= 5; // c = c % 5
+        console.log("c after %= 5:", c); // 1
+
+        
+
+
+        // Comparison Operators
+        let x = 10;
+        let y = "10";
+
+        console.log("x == y:", x == y); // true (value comparison)
+        console.log("x === y:", x === y); // false (value and type comparison)
+        console.log("x != y:", x != y); // false (value comparison)
+        console.log("x !== y:", x !== y); // true (value and type comparison)
+        console.log("x > y:", x > y); // false
+        console.log("x < y:", x < y); // false
+
+        // Logical Operators
+        let p = true;
+        let q = false;
+        console.log("p && q:", p && q); // false
+        console.log("p || q:", p || q); // true
+        console.log("!p:", !p); // false
+
+    </script>
+</body>
+</html>
