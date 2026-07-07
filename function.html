@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function in JavaScript</title>
+</head>
+<body>
+    <h1>Function in JavaScript</h1>
+    <p>This is a simple example of a function in JavaScript.</p>
+
+    <script>
+        // Function Declaration
+        function greet(name) {
+            return "Hello, " + name + "!";
+        }
+
+        // Calling the function
+        let message = greet("Shivam");
+        alert(message); // Output: Hello, Shivam!
+        console.log(message); // Output: Hello, Shivam!
+
+        // Function Expression
+        const add = function(a, b) {
+            return a + b;
+        };
+
+        alert(add(10, 20)); // Output: 30
+
+        // Calling the function expression
+        let sum = add(5, 10);
+        console.log("Sum:", sum); // Output: Sum: 15
+
+        // Arrow Function
+        const multiply = (x, y) => x * y;
+
+        // Calling the arrow function
+        let product = multiply(4, 5);
+        console.log("Product:", product); // Output: Product: 20
+    </script>
+</body>
+</html>
