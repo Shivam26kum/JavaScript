@@ -6,6 +6,29 @@
     <title>Scope in JavaScript</title>
 </head>
 <body>
+    <h1>Scope in JavaScript</h1>
+    <script>
+        // Global Scope
+        var globalVar = "I am a global variable";
+
+        function checkScope() {
+            // Local Scope
+            var localVar = "I am a local variable";
+            console.log(globalVar); // Accessible
+            console.log(localVar); // Accessible
+        }
+
+        checkScope();
+        console.log(globalVar); // Accessible
+        // console.log(localVar); // Unaccessible, will throw an error
+
+        // Block Scope
+        if (true) {
+            let blockVar = "I am a block-scoped variable";
+            console.log(blockVar); // Accessible
+        }
+        // console.log(blockVar); // Unaccessible, will throw an error
+    </script>
     
 </body>
 </html>
